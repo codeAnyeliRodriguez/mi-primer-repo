@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Lorem, ipsum dolor.</h1>
     <!-- comandos git
     git version //este comando es para verificar la version de git
     git config--global user.name"anyeli" //este comando es para añadir un nombre de usuario
@@ -20,7 +21,14 @@
     git add .   //muestra cuales estan modificados
     git commit -m "mi primer commit"
     git commit --oneline
-    git commit -m "cambie mi pagina al español"     //cambiar nombre de version -->
+    git commit -m "cambie mi pagina al español"     //cambiar nombre de version(ojo no utilizar caracteres extraños, solo utilizar la lengua inglesa)
+    git log --oneline
+  
+    //subir pagina a github
+    git remote add origin https://github.com/codeAnyeliRodriguez/mi-primer-repo.git
+    git branch -M main
+    git push -u origin main
+    -->
 
 
     <!-- Introducción a GIT
@@ -192,6 +200,29 @@ git tag -d nombreTags
 git tag -a nombreTag f52f3da -m "version alpha"
 // Mostrar información del tag
 git show nombreTag
+ -->
+
+
+ <!-- Quick setup — if you’ve done this kind of thing before
+or	
+https://github.com/codeAnyeliRodriguez/mi-primer-repo.git
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+
+…or create a new repository on the command line
+echo "# mi-primer-repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/codeAnyeliRodriguez/mi-primer-repo.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/codeAnyeliRodriguez/mi-primer-repo.git
+git branch -M main
+git push -u origin main
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
  -->
 </body>
 </html>
